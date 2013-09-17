@@ -1,0 +1,1224 @@
+# GNU Make version 3.78.1, by Richard Stallman and Roland McGrath.
+# Built for Windows32
+# Copyright (C) 1988, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
+# 	Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# Report bugs to <bug-make@gnu.org>.
+
+Utilizacao:
+make               - recompilar.
+make all           - recompilar.
+make rebuild       - recriar tudo.
+make depend        - recriar lista de dependencias na makefile. Basta uma vez.
+make clean         - limpar executaveis, ficheiros objecto, core e bak.
+make check         - corre os testes e verifica se estão correctos.
+Utilizacao:
+make               - recompilar.
+make all           - recompilar.
+make rebuild       - recriar tudo.
+make depend        - recriar lista de dependencias na makefile. Basta uma vez.
+make clean         - limpar executaveis, ficheiros objecto, core e bak.
+make check         - corre os testes e verifica se estão correctos.
+
+# Make data base, printed on Thu May 12 12:31:57 2005
+
+# Variables
+
+# default
+F77 = $(FC)
+# default
+PREPROCESS.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -F
+# environment
+PROMPT = $P$G
+# environment
+LOGONSERVER = \\TRINITY
+# automatic
+@F = $(notdir $@)
+# environment
+USERNAME = Squall
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+windir = C:\WINDOWS
+# default
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .r .y .l .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+# default
+COMPILE.r = $(FC) $(FFLAGS) $(RFLAGS) $(TARGET_ARCH) -c
+# default
+LINK.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+NUMBER_OF_PROCESSORS = 1
+# environment
+OS = Windows_NT
+# default
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# environment
+HOMEPATH = \Documents and Settings\Squall
+# default
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+ComSpec = C:\WINDOWS\system32\cmd.exe
+# default
+TEXI2DVI = texi2dvi
+# default
+CURDIR := D:/My Documents/IST/Ciências Informáticas/4º Ano/2º Semestre/Análise e Síntese de Algoritmos/Projects/proj1
+# automatic
++F = $(notdir $+)
+# default
+COMPILE.f = $(FC) $(FFLAGS) $(TARGET_ARCH) -c
+# automatic
+%F = $(notdir $%)
+# environment
+TMP = C:\DOCUME~1\Squall\LOCALS~1\Temp
+# default
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+CO = co
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# default
+PREPROCESS.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -F
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# default
+M2C = m2c
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# makefile
+SRCS = proj1.c
+# default
+FC = f77
+# makefile
+TESTFILE = test.out
+# makefile
+CC = gcc
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+# default
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+# default
+CXX = g++
+# default
+AR = ar
+# default
+CWEAVE = cweave
+# environment
+ALLUSERSPROFILE = C:\Documents and Settings\All Users
+# environment
+FP_NO_HOST_CHECK = NO
+# default
+COMPILE.F = $(FC) $(FFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# default
+COMPILE.s = $(AS) $(ASFLAGS) $(TARGET_MACH)
+# default
+SHELL := C:/WINDOWS/system32/sh.exe
+# default
+YACC = yacc
+# default
+COMPILE.def = $(M2C) $(M2FLAGS) $(DEFFLAGS) $(TARGET_ARCH)
+# default
+LINK.C = $(LINK.cc)
+# makefile
+MAKEFLAGS = p
+# default
+LINK.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+OUTPUT_OPTION = -o $@
+# default
+MAKE_VERSION := 3.78.1
+# default
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+# environment
+MAKELEVEL := 0
+# makefile
+CFLAGS = -g -Wall -ansi -pedantic $(DEFINES)
+# environment
+HOMEDRIVE = C:
+# environment
+CVSROOT = D:\CVSROOT\
+# default
+YACC.y = $(YACC) $(YFLAGS)
+# default
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+TANGLE = tangle
+# environment
+Path = C:\Perl\bin
+# default
+CHECKOUT,v = +$(patsubst $@-noexist,$(CO) $(COFLAGS) $< $@,		 $(filter-out $@,$(firstword $(wildcard $@) $@-noexist)))
+# default
+LD = ld
+# environment
+USERDOMAIN = TRINITY
+# environment
+MFLAGS = -p
+# makefile
+PROG = proj1
+# default
+GET = echo no sccs get
+# default
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+# default
+PC = pc
+# environment
+CLIENTNAME = Console
+# default
+AS = as
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# default
+TEX = tex
+# environment
+SESSIONNAME = Console
+# default
+COMPILE.cpp = $(COMPILE.cc)
+# makefile
+TEST = $(addprefix p1gt/, $(TESTS))
+# environment
+COMPUTERNAME = TRINITY
+# default
+COMPILE.C = $(COMPILE.cc)
+# default
+LINT = lint
+# default
+F77FLAGS = $(FFLAGS)
+# default
+COMPILE.p = $(PC) $(PFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# environment
+SystemDrive = C:
+# default
+RM = rm -f
+# environment
+TEMP = C:\DOCUME~1\Squall\LOCALS~1\Temp
+# default
+.LIBPATTERNS = lib%.so lib%.a
+# environment
+CommonProgramFiles = C:\Program Files\Common Files
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+USERPROFILE = C:\Documents and Settings\Squall
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+APPDATA = C:\Documents and Settings\Squall\Application Data
+# default
+WEAVE = weave
+# automatic
+?F = $(notdir $?)
+# environment
+PROCESSOR_REVISION = 0700
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+CPP = $(CC) -E
+# automatic
+<F = $(notdir $<)
+# default
+LEX = lex
+# default
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# environment
+ProgramFiles = C:\Program Files
+# default
+LEX.l = $(LEX) $(LFLAGS) -t
+# default
+COMPILE.mod = $(M2C) $(M2FLAGS) $(MODFLAGS) $(TARGET_ARCH)
+# default
+ARFLAGS = rv
+# environment
+CATALINA_HOME = C:\Java\jwsdp-1.5
+# makefile
+TESTS = p1test01.in p1test02.in p1test03.in p1test05.in p1test07.in p1test09.in
+# automatic
+*F = $(notdir $*)
+# makefile
+OBJS = proj1.o
+# automatic
+^F = $(notdir $^)
+# default
+LINT.c = $(LINT) $(LINTFLAGS) $(CPPFLAGS) $(TARGET_ARCH)
+# environment
+SystemRoot = C:\WINDOWS
+# default
+LINK.r = $(FC) $(FFLAGS) $(RFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+LINK.cpp = $(LINK.cc)
+# default
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+# default
+MAKECMDGOALS := # Directories
+# default
+MAKEFILES := 
+# default
+CTANGLE = ctangle
+# default
+MAKE_COMMAND := make
+# environment
+PATH = C:\Perl\bin\;C:\Program Files\NetworkSimplicity\ssh;C:\texmf\miktex\bin;C:\Java\jwsdp-1.5\bin;C:\Java\jwsdp-1.5\apache-ant\bin;C:\Java\jwsdp-1.5\jaxb\bin;C:\Java\jwsdp-1.5\jaxr\bin;C:\Java\jwsdp-1.5\jaxrpc\bin;C:\Java\jwsdp-1.5\jwsdp-shared\bin;C:\Java\jwsdp-1.5\wsi-sampleapp\bin;C:\Java\jwsdp-1.5\xws-security\bin;C:\Program Files\Java\jdk1.5.0_02\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\PROGRA~1\GNU\WINCVS~1.3\CVSNT;C:\Program Files\MinGW\bin;C:\Java\jwsdp-1.5\jwsdp-shared\bin;C:\Program Files\SSH Communications Security\SSH Secure Shell;C:\PROGRA~1\ATT\Graphviz\bin;C:\PROGRA~1\ATT\Graphviz\bin\tools;C:\Java\jwsdp-1.5\jwsdp-shared\bin;C:\Program Files\SSH Communications Security\SSH Secure Shell
+# environment
+PROCESSOR_IDENTIFIER = x86 Family 6 Model 7 Stepping 0, AuthenticAMD
+# environment
+JAVA_HOME = C:\Program Files\Java\jdk1.5.0_02
+# default
+LINK.f = $(FC) $(FFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+# default
+MAKEINFO = makeinfo
+# 122 variables in 523 hash buckets.
+# average of 0.2 variables per bucket, max 3 in one bucket.
+
+# Directories
+
+# C:\Java\jwsdp-1.5\jwsdp-shared\bin (key C:/Java/jwsdp-1.5/jwsdp-shared/bin, mtime 1111351498): 31 files, no impossibilities.
+# SCCS: could not be stat'd.
+# C:\Java\jwsdp-1.5\wsi-sampleapp\bin (key C:/Java/jwsdp-1.5/wsi-sampleapp/bin, mtime 1111351502): 8 files, no impossibilities.
+# C:\Java\jwsdp-1.5\apache-ant\bin (key C:/Java/jwsdp-1.5/apache-ant/bin, mtime 1111351496): 15 files, no impossibilities.
+# C:\texmf\miktex\bin (key C:/texmf/miktex/bin, mtime 1114891106): 330 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1115890926): 1603 files, no impossibilities so far.
+# RCS: could not be stat'd.
+# C:\Java\jwsdp-1.5\bin (key C:/Java/jwsdp-1.5/bin, mtime 1111351491): 19 files, no impossibilities.
+# C:\Java\jwsdp-1.5\xws-security\bin (key C:/Java/jwsdp-1.5/xws-security/bin, mtime 1111351501): 6 files, no impossibilities.
+# C:\Java\jwsdp-1.5\jaxr\bin (key C:/Java/jwsdp-1.5/jaxr/bin, mtime 1111351506): 4 files, no impossibilities.
+# C:\Java\jwsdp-1.5\jaxb\bin (key C:/Java/jwsdp-1.5/jaxb/bin, mtime 1111351504): 4 files, no impossibilities.
+# . (key D:/My Documents/IST/Ciências Informáticas/4º Ano/2º Semestre/Análise e Síntese de Algoritmos/Projects/proj1, mtime 1115847556): 13 files, 42 impossibilities.
+# C:\Java\jwsdp-1.5\jaxrpc\bin (key C:/Java/jwsdp-1.5/jaxrpc/bin, mtime 1111351508): 6 files, no impossibilities.
+# C:\Perl\bin\ (key C:/Perl/bin, mtime 1115670287): 88 files, no impossibilities.
+# C:\Program Files\Java\jdk1.5.0_02\bin (key C:/Program Files/Java/jdk1.5.0_02/bin, mtime 1111338692): 38 files, no impossibilities.
+# C:\Program Files\NetworkSimplicity\ssh (key C:/Program Files/NetworkSimplicity/ssh, mtime 1114893341): 8 files, no impossibilities.
+
+# 2173 files, 42 impossibilities in 16 directories.
+
+# Implicit Rules
+
+%.in: %.out
+#  commands to execute (from `makefile', line 45):
+	./$(PROG) < $@ > $(TESTFILE)
+	@cat $(TESTFILE)
+	@cat $<
+	diff -w $(TESTFILE) $<
+	
+
+%.out:
+
+%.a:
+
+%.ln:
+
+%.o:
+
+%: %.o
+#  commands to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.c:
+
+%: %.c
+#  commands to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.ln: %.c
+#  commands to execute (built-in):
+	$(LINT.c) -C$* $<
+
+%.o: %.c
+#  commands to execute (built-in):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+%.cc:
+
+%: %.cc
+#  commands to execute (built-in):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cc
+#  commands to execute (built-in):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+%.cpp:
+
+%: %.cpp
+#  commands to execute (built-in):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.cpp
+#  commands to execute (built-in):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+%.p:
+
+%: %.p
+#  commands to execute (built-in):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.p
+#  commands to execute (built-in):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+%.f:
+
+%: %.f
+#  commands to execute (built-in):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.f
+#  commands to execute (built-in):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+%.r:
+
+%: %.r
+#  commands to execute (built-in):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.r
+#  commands to execute (built-in):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+%.f: %.r
+#  commands to execute (built-in):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+%.y:
+
+%.ln: %.y
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	$(LINT.c) -C$* y.tab.c 
+	$(RM) y.tab.c
+
+%.c: %.y
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	mv -f y.tab.c $@
+
+%.l:
+
+%.ln: %.l
+#  commands to execute (built-in):
+	@$(RM) $*.c
+	$(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	$(RM) $*.c
+
+%.c: %.l
+#  commands to execute (built-in):
+	@$(RM) $@ 
+	$(LEX.l) $< > $@
+
+%.r: %.l
+#  commands to execute (built-in):
+	$(LEX.l) $< > $@ 
+	mv -f lex.yy.r $@
+
+%.s:
+
+%: %.s
+#  commands to execute (built-in):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+%.o: %.s
+#  commands to execute (built-in):
+	$(COMPILE.s) -o $@ $<
+
+%.mod:
+
+%: %.mod
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+%.o: %.mod
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ $<
+
+%.sym:
+
+%.def:
+
+%.sym: %.def
+#  commands to execute (built-in):
+	$(COMPILE.def) -o $@ $<
+
+%.h:
+
+%.info:
+
+%.dvi:
+
+%.tex:
+
+%.dvi: %.tex
+#  commands to execute (built-in):
+	$(TEX) $<
+
+%.texinfo:
+
+%.info: %.texinfo
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texinfo
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.texi:
+
+%.info: %.texi
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.texi
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.txinfo:
+
+%.info: %.txinfo
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+%.dvi: %.txinfo
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+%.w:
+
+%.c: %.w
+#  commands to execute (built-in):
+	$(CTANGLE) $< - $@
+
+%.tex: %.w
+#  commands to execute (built-in):
+	$(CWEAVE) $< - $@
+
+%.ch:
+
+%.web:
+
+%.p: %.web
+#  commands to execute (built-in):
+	$(TANGLE) $<
+
+%.tex: %.web
+#  commands to execute (built-in):
+	$(WEAVE) $<
+
+%.sh:
+
+%: %.sh
+#  commands to execute (built-in):
+	cat $< >$@ 
+	chmod a+x $@
+
+%.elc:
+
+%.el:
+
+(%): %
+#  commands to execute (built-in):
+	$(AR) $(ARFLAGS) $@ $<
+
+%.out: %
+#  commands to execute (built-in):
+	@rm -f $@ 
+	cp $< $@
+
+%.c: %.w %.ch
+#  commands to execute (built-in):
+	$(CTANGLE) $^ $@
+
+%.tex: %.w %.ch
+#  commands to execute (built-in):
+	$(CWEAVE) $^ $@
+
+%:: %,v
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%,v
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: RCS/%
+#  commands to execute (built-in):
+	$(CHECKOUT,v)
+
+%:: s.%
+#  commands to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+%:: SCCS/s.%
+#  commands to execute (built-in):
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+
+# 76 implicit rules, 5 (6.6%) terminal.
+
+# Pattern-specific variable values
+
+# No pattern-specific variable values.
+
+# Files
+
+# Not a target:
+.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.c) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.texinfo.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.mod.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ $<
+
+# Not a target:
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.c) $(OUTPUT_OPTION) $<
+
+rebuild: clean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.s) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+.PHONY: all rebuild clean check checkclean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.txinfo.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.y.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	mv -f y.tab.c $@
+
+# Not a target:
+.SUFFIXES: .out .a .ln .o .c .cc .c .cpp .p .f .f .r .y .l .s .s .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.l:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.web.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(WEAVE) $<
+
+checkclean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 41):
+	rm -f $(TESTFILE)
+	
+
+# Not a target:
+.s.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.s) -o $@ $<
+
+# Not a target:
+.sym:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.texi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.web.p:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TANGLE) $<
+
+# Not a target:
+.def:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2005-05-05 13:44:04
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `makefile', line 57):
+	@echo "Utilizacao:"
+	@echo "make               - recompilar."
+	@echo "make all           - recompilar."
+	@echo "make rebuild       - recriar tudo."
+	@echo "make depend        - recriar lista de dependencias na makefile. Basta uma vez."
+	@echo "make clean         - limpar executaveis, ficheiros objecto, core e bak."
+	@echo "make check         - corre os testes e verifica se estão correctos."
+	
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 28):
+	rm -f $(PROG) $(OBJS)
+	
+
+# Not a target:
+.cc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.ch:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.def.sym:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.def) -o $@ $<
+
+# Not a target:
+p1gt/p1test02.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.elc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.y.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(YACC.y) $< 
+	$(LINT.c) -C$* y.tab.c 
+	$(RM) y.tab.c
+
+# Not a target:
+.texi.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+.el:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.texinfo.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEXI2DVI) $(TEXI2DVI_FLAGS) $<
+
+# Not a target:
+#:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# ^ := 
+# automatic
+# @ := #
+# automatic
+# + := 
+# automatic
+# ? := 
+# automatic
+# * := 
+# automatic
+# % := 
+# automatic
+# < := #
+# 7 variables in 23 hash buckets.
+# average of 0.3 variables per bucket, max 2 in one bucket.
+#  commands to execute (from `makefile', line 57):
+	@echo "Utilizacao:"
+	@echo "make               - recompilar."
+	@echo "make all           - recompilar."
+	@echo "make rebuild       - recriar tudo."
+	@echo "make depend        - recriar lista de dependencias na makefile. Basta uma vez."
+	@echo "make clean         - limpar executaveis, ficheiros objecto, core e bak."
+	@echo "make check         - corre os testes e verifica se estão correctos."
+	
+
+# Not a target:
+.txinfo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.p.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.p) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.r.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.w.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(CWEAVE) $< - $@
+
+# Not a target:
+.txinfo.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 57):
+	@echo "Utilizacao:"
+	@echo "make               - recompilar."
+	@echo "make all           - recompilar."
+	@echo "make rebuild       - recriar tudo."
+	@echo "make depend        - recriar lista de dependencias na makefile. Basta uma vez."
+	@echo "make clean         - limpar executaveis, ficheiros objecto, core e bak."
+	@echo "make check         - corre os testes e verifica se estão correctos."
+	
+
+# Not a target:
+.c.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINT.c) -C$* $<
+
+# Not a target:
+.w:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.l.r:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LEX.l) $< > $@ 
+	mv -f lex.yy.r $@
+
+all: proj1
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.F.f:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.F) $(OUTPUT_OPTION) $<
+
+check: all test.out p1gt/p1test01.in p1gt/p1test02.in p1gt/p1test03.in p1gt/p1test05.in p1gt/p1test07.in p1gt/p1test09.in checkclean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+proj1: proj1.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 19):
+	$(CC) $(CFLAGS) -o $@ $^
+	
+
+# Not a target:
+.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.r.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.r) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Directories:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# ^ := 
+# automatic
+# @ := Directories
+# automatic
+# + := 
+# automatic
+# ? := 
+# automatic
+# * := 
+# automatic
+# % := 
+# automatic
+# < := Directories
+# 7 variables in 23 hash buckets.
+# average of 0.3 variables per bucket, max 2 in one bucket.
+#  commands to execute (from `makefile', line 57):
+	@echo "Utilizacao:"
+	@echo "make               - recompilar."
+	@echo "make all           - recompilar."
+	@echo "make rebuild       - recriar tudo."
+	@echo "make depend        - recriar lista de dependencias na makefile. Basta uma vez."
+	@echo "make clean         - limpar executaveis, ficheiros objecto, core e bak."
+	@echo "make check         - corre os testes e verifica se estão correctos."
+	
+
+# Not a target:
+.p:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.p) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+.l.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	@$(RM) $@ 
+	$(LEX.l) $< > $@
+
+# Not a target:
+.sh:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	cat $< >$@ 
+	chmod a+x $@
+
+# Not a target:
+p1gt/p1test09.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.web:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.S.s:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(PREPROCESS.S) $< > $@
+
+depend: proj1.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 53):
+	makedepend -- $(CFLAGS) -- $(INCLUDES) $(SRCS)
+	
+
+# Not a target:
+.out:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.cc:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+p1gt/p1test07.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.f.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.f) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.texi.info:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(MAKEINFO) $(MAKEINFO_FLAGS) $< -o $@
+
+# Not a target:
+.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+proj1.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.tex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.cpp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.cpp) $(OUTPUT_OPTION) $<
+
+# Not a target:
+.l.ln:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	@$(RM) $*.c
+	$(LEX.l) $< > $*.c
+	$(LINT.c) -i $*.c -o $@
+	$(RM) $*.c
+
+# Not a target:
+p1gt/p1test05.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.y:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+p1gt/p1test03.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.tex.dvi:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(TEX) $<
+
+# Not a target:
+.r:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.r) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# Not a target:
+p1gt/p1test01.in:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.mod:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(COMPILE.mod) -o $@ -e $@ $^
+
+test.out:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 36):
+	touch $(TESTFILE)
+	
+
+# Not a target:
+.texinfo:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.w.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(CTANGLE) $< - $@
+
+# Not a target:
+.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (built-in):
+	$(LINK.cpp) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+# 79 files in 1007 hash buckets.
+# average 0.078 files per bucket, max 2 files in one bucket.
+
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# Finished Make data base on Thu May 12 12:31:57 2005
+

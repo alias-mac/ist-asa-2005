@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+
+my $in = shift or helpMsg();
+my $out = shift or helpMsg();
+
+open IN, $in;
+open OUT, "| dot -Tpng > $out";
+
+my ( $nV, $nE ) = split / /, <IN>;
+chomp $nE;
+print "Processing graph with $nV vertices and $nE edges.\n";
+$in =~ s/\.graph//i;
+print OUT "digraph \"$in\" {\n";
+for ( 1..$nE ) {
+	my ($v1, $v2, $w) = split / /, <IN>;
+	chomp $w;
+	print OUT "\"$v1\" -> \"$v2\" [ dir=both, label=\"$w\" ]\n";
+}
+print OUT "}\n";
+close IN;
+close OUT;
+
+print "Done: $out is out.\n";
+
+sub helpMsg
+{
+	print "Use: g2png <ficheiro-de-grafo> <ficheiro.png>\n";
+}
