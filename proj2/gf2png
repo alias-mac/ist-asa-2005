@@ -1,0 +1,53 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+
+my $in = shift or helpMsg();
+open IN, $in;
+
+$in =~ s/\.graph//i;
+my $out = $in.".png";
+open OUT, "| dot -Tpng > $out";
+
+my ( $nV, $nE ) = split / /, <IN>;
+chomp $nE;
+print "Processing graph with $nV vertices and $nE edges.\n";
+
+print OUT "digraph \"$in\" {\n";
+my %capacities = ();
+my %flows = ();
+my %newcapacities = ();
+for ( 1..$nE ) {
+	my ($v1, $v2, $capacity) = split / /, <IN>;
+	chomp $capacity;
+	$capacities{$v1.$v2} = $capacity;
+}
+<IN>; # ignore '#'
+for ( 1..$nE ) {
+	my ($v1, $v2, $flow) = split / /, <IN>;
+	chomp $flow;
+	print OUT "\"$v1\" -> \"$v2\" [ label=\"$flow/".$capacities{$v1.$v2}."\" ]\n";
+}
+<IN>; # ignore the '#'
+my $nChanges = <IN>;
+chomp $nChanges;
+for ( 1..$nChanges ) {
+	my ($v1, $v2, $newCapacity) = split / /, <IN>;
+	chomp $newCapacity;
+	print OUT "\"$v1\" -> \"$v2\" [ color=\"red\",label=\"$newCapacity\" ]\n";
+}
+print OUT "}\n";
+close OUT;
+print "Done: $out is out.\n";
+
+# TODO: output the new graph
+close IN;
+
+
+
+
+sub helpMsg
+{
+	print "Use: gf2png <ficheiro-de-grafo>\n";
+}
